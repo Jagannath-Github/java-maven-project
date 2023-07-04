@@ -8,7 +8,6 @@ pipeline {
                 sh "pwd"
                 sh '''
                 ls
-                Cal 2023
                 date '''
             }
         }
