@@ -8,7 +8,8 @@ pipeline {
                 sh "pwd"
                 sh '''
                 ls
-                date '''
+                date
+                '''
             }
         }
         stage('Docker Image Publish') {
