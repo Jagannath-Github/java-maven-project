@@ -5,11 +5,7 @@ pipeline {
         stage('Docker Image Build') {
             steps {
                 echo 'Hello Build'
-                sh "pwd"
-                sh '''
-                ls
-                date
-                '''
+                sh "docker build -t jagannathcloud/java-maven-project ."
             }
         }
         stage('Docker Image Publish') {
